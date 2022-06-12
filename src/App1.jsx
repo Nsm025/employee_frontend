@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.scss";
-import { MLogin , MRegister } from "./components/login/index";
+import { ELogin , ERegister } from "./components/login/eindex";
 
 
 
-class App extends React.Component {
+class App1 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -41,10 +41,10 @@ class App extends React.Component {
         <div className="login">
           <div className="container" ref={ref => (this.container = ref)}>
             {isLogginActive && (
-              <MLogin containerRef={ref => (this.current = ref)} />
+              <ELogin containerRef={ref => (this.current = ref)} />
             )}
             {!isLogginActive && (
-              <MRegister containerRef={ref => (this.current = ref)} />
+              <ERegister containerRef={ref => (this.current = ref)} />
             )}
           </div>
           <RightSide
@@ -75,4 +75,4 @@ const RightSide = props => {
   );
 };
 
-export default App;
+export default App1;

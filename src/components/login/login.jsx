@@ -1,7 +1,7 @@
 import React from "react";
 import loginImg from "../../login.svg";
 
-export class Login extends React.Component {
+export class MLogin extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -9,7 +9,7 @@ export class Login extends React.Component {
   render() {
     return (
       <div className="base-container" ref={this.props.containerRef}>
-        <div className="header">Login</div>
+        <div className="header">Manager Login</div>
         <div className="content">
           <div className="image">
             <img src={loginImg} />
